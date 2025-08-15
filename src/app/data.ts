@@ -38,7 +38,7 @@ export const experience: ExperienceEntry[] = [
     role: 'Frontend & Full Stack Projects',
     duration: '2024 – Present',
     responsibilities: [
-      'Delivered “Bin Naqshe Kadam,” a feature-rich travel platform from scratch.',
+      'Delivered “Maps And Mantras,” a feature-rich travel platform from scratch.',
       'Handled end-to-end lifecycles for e-commerce and service-based startups.',
       'Built fast, SEO-friendly UIs to help clients grow their user base quickly.',
     ],

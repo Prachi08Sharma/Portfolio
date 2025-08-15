@@ -87,3 +87,9 @@ h2 {
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 380px) {
+  .number {
+    font-size: 0.7rem;
+  }
+}
