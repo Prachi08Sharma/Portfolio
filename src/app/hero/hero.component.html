@@ -1,0 +1,11 @@
+<section class="hero" id="home">
+  <img [src]="profile.photo" [alt]="profile.name" class="profileImage" />
+  <h1 class="title">
+    Hi, I'm <span class="highlight">{{ profile.name }}</span>
+  </h1>
+  <div class="tagline">{{ profile.tagline }}</div>
+  <div class="ctaButtons">
+    <a href="#projects" class="cta">View My Work</a>
+    <a href="#contact" class="ctaOutline">Contact</a>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+<section class="container" id="experience">
+  <h2>
+    <span class="sectionIcon" tabindex="0">
+      <fa-icon [icon]="faWork" size="lg" style="color: #6a5af9"></fa-icon>
+    </span>
+    Experience
+  </h2>
+  <div class="timeline">
+    <div *ngFor="let exp of experience; let i = index" class="entry">
+      <div class="icon">
+        <fa-icon
+          [icon]="
+            companyIcons[exp.company] ? companyIcons[exp.company] : faWork
+          "
+          size="2x"
+        ></fa-icon>
+      </div>
+      <div>
+        <h3>
+          {{ exp.company }} <span class="role">[{{ exp.role }}]</span>
+        </h3>
+        <span class="duration">{{ exp.duration }}</span>
+        <ul class="responsibilities">
+          <li *ngFor="let resp of exp.responsibilities">{{ resp }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

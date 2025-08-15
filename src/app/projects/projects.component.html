@@ -1,0 +1,30 @@
+<section class="container" id="projects">
+  <h2>
+    <span class="sectionIcon" tabindex="0">
+      <fa-icon
+        [icon]="faProjectDiagram"
+        size="lg"
+        style="color: #bb6bd9"
+      ></fa-icon>
+    </span>
+    Projects
+  </h2>
+  <div class="grid">
+    <div *ngFor="let proj of projects; let i = index" class="card">
+      <div class="imgBox">
+        <img [src]="proj.image" [alt]="proj.title" />
+      </div>
+      <div class="info">
+        <h3 class="title">{{ proj.title }}</h3>
+        <h4 class="type">{{ proj.type }}</h4>
+        <div class="stack">
+          <span *ngFor="let s of proj.stack" class="stackItem">{{ s }}</span>
+        </div>
+        <p class="description">{{ proj.description }}</p>
+        <ul class="contributions">
+          <li *ngFor="let c of proj.contributions">{{ c }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

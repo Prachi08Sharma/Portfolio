@@ -1,0 +1,40 @@
+<header class="header">
+  <div class="logo" (click)="scrollTo('home')">Portfolio</div>
+
+  <button
+    class="menuButton"
+    aria-label="Toggle navigation menu"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="menuOpen"
+  >
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </button>
+
+  <nav class="nav" [class.active]="menuOpen">
+    <button
+      *ngFor="
+        let section of [
+          'home',
+          'about',
+          'experience',
+          'skills',
+          'projects',
+          'contact'
+        ]
+      "
+      class="navButton"
+      (click)="scrollTo(section)"
+    >
+      {{ section.toUpperCase() }}
+    </button>
+    <button
+      (click)="toggleTheme()"
+      class="themeButton"
+      aria-label="Toggle Light/Dark Theme"
+    >
+      {{ themeService.isDark() ? "☀ Light" : "🌙 Dark" }}
+    </button>
+  </nav>
+</header>

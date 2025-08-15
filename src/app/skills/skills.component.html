@@ -1,0 +1,22 @@
+<section class="container" id="skills">
+  <h2>
+    <span class="sectionIcon" tabindex="0">
+      <fa-icon [icon]="faBolt" size="lg" style="color: #fdc921"></fa-icon>
+    </span>
+    Skills
+  </h2>
+  <div class="grid">
+    <div *ngFor="let skill of skills" class="skillCard">
+      <span class="icon"
+        ><fa-icon [icon]="skill.icon" [style.color]="skill.color"></fa-icon
+      ></span>
+      <div class="skillInfo">
+        <span>{{ skill.name }}</span>
+        <div class="progressBar">
+          <div class="progressFill" [style.width.%]="skill.level"></div>
+        </div>
+        <span class="level">{{ skill.level }}%</span>
+      </div>
+    </div>
+  </div>
+</section>

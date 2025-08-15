@@ -1,0 +1,45 @@
+<section class="contactSection" id="contact">
+  <h2>
+    <span class="sectionIcon" tabindex="0">
+      <fa-icon [icon]="faPaperPlane" size="lg" style="color: #ed6c02"></fa-icon>
+    </span>
+    Contact
+  </h2>
+  <p class="lead">
+    Interested in connecting or collaborating? Reach out via email or any of my
+    socials!
+  </p>
+  <div class="contactGrid">
+    <a
+      [href]="'mailto:' + contact.email"
+      class="card"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <fa-icon [icon]="faEnvelope" size="2x" style="color: #ed6c02"></fa-icon>
+      <span>Email</span>
+    </a>
+    <a
+      [href]="contact.linkedin"
+      class="card"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <fa-icon [icon]="faLinkedin" size="2x" style="color: #0a66c2"></fa-icon>
+      <span>LinkedIn</span>
+    </a>
+    <a
+      [href]="contact.github"
+      class="card"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <fa-icon [icon]="faGithub" size="2x" style="color: #222"></fa-icon>
+      <span>GitHub</span>
+    </a>
+    <div class="card">
+      <fa-icon [icon]="faPhone" size="2x" style="color: #222"></fa-icon>
+      <span>+91 7067337417</span>
+    </div>
+  </div>
+</section>
